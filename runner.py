@@ -10,8 +10,12 @@ from models import MotionTransformer, UniDiffuser
 from trainers import DDPMTrainer_beat, DDPMTrainer_show
 from datasets import ShowDataset
 
-from mmcv.runner import get_dist_info, init_dist
-from mmcv.parallel import MMDistributedDataParallel, MMDataParallel
+# from mmcv.runner import get_dist_info, init_dist
+# from mmcv.parallel import MMDistributedDataParallel, MMDataParallel
+
+# Updated mmcv import for v2 
+from mmengine.dist import get_dist_info
+
 import warnings
 
 import torch

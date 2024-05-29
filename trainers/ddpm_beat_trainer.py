@@ -24,7 +24,11 @@ import wandb
 import json
 import librosa
 
-from mmcv.runner import get_dist_info
+# from mmcv.runner import get_dist_info
+
+# Updated mmcv import for v2 
+from mmengine.dist import get_dist_info
+
 from models.gaussian_diffusion import (
     GaussianDiffusion,
     get_named_beta_schedule,

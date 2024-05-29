@@ -4,8 +4,14 @@ from functools import partial
 from typing import Optional, Union
 
 import numpy as np
-from mmcv.runner import get_dist_info
-from mmcv.utils import Registry, build_from_cfg
+
+
+# from mmcv.runner import get_dist_info
+# from mmcv.utils import Registry, build_from_cfg
+
+# Updated mmcv import for v2 
+from mmengine.dist import get_dist_info
+
 from torch.utils.data import DataLoader
 from torch.utils.data.dataset import Dataset
 

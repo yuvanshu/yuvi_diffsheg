@@ -1,7 +1,11 @@
 import argparse
 import os
 import torch
-from mmcv.runner.dist_utils  import get_dist_info
+# from mmcv.runner.dist_utils  import get_dist_info
+
+# Updated mmcv import for v2 
+from mmengine.dist import get_dist_info
+
 import torch.distributed as dist
 
 

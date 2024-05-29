@@ -1,5 +1,5 @@
 pyarrow==3.0.0
-mmcv=2.1.0
+mmcv==2.1.0
 matplotlib==3.7.1
 scipy==1.10.1
 lmdb==0.96
